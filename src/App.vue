@@ -1,6 +1,9 @@
 <script setup>
 import AwardItem from "./components/AwardItem.vue";
 import AwardItemContainer from "./components/AwardItemContainer.vue";
+import hookrat from "./assets/hookrat.jpg";
+import assassin from "./assets/assassin.jpg";
+import gunner from "./assets/gunner.jpg";
 </script>
 
 <template>
@@ -163,21 +166,21 @@ import AwardItemContainer from "./components/AwardItemContainer.vue";
             Name="Ratling Gunner"
             :IsImage="true"
             :IsEmote="true"
-            Url="/src/assets/gunner.jpg"
+            :Url="gunner"
             :IsWinner="true"
           />
           <AwardItem
             Name="Packmaster"
             :IsImage="true"
             :IsEmote="true"
-            Url="/src/assets/hookrat.jpg"
+            :Url="hookrat"
             :IsWinner="false"
           />
           <AwardItem
             Name="Gutter Runner"
             :IsImage="true"
             :IsEmote="true"
-            Url="/src/assets/assassin.jpg"
+            :Url="assassin"
             :IsWinner="false"
           />
         </AwardItemContainer>

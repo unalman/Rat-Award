@@ -9,7 +9,7 @@ const props = defineProps({
   IsWinner: Boolean,
 });
 const resultText = props.IsWinner ? "Winner" : "Nominee";
-const parents = ["www.ratawards.com", "localhost"];
+const parents = ["www.ratawards.com","ratawards.com","localhost"];
 const parentString = "&parent=";
 const UrlFilled = props.Url + parentString + parents.join(parentString);
 </script>
