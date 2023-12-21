@@ -136,7 +136,7 @@ import gunner from "./assets/gunner.jpg";
       <li>
         <AwardItemContainer
           Title="FUNNIEST MOMENT OF THE YEAR"
-          Description="zwickks was the clear winner."
+          Description="It was a fun year and it was hard to choose from so many fun moments."
         >
           <AwardItem
             Name="Unexpected End"
@@ -148,6 +148,12 @@ import gunner from "./assets/gunner.jpg";
             Name="Christmas Gift"
             :IsImage="false"
             Url="https://clips.twitch.tv/embed?clip=TransparentSpeedyLionTBTacoRight-anTuk8rSWGxjMXdi"
+            :IsWinner="false"
+          />
+          <AwardItem
+            Name="Lucky or Not"
+            :IsImage="false"
+            Url="https://clips.twitch.tv/embed?clip=LazyCharmingPepper4Head-cWkDQJXFNznToB2z"
             :IsWinner="false"
           />
           <AwardItem
