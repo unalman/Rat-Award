@@ -13,9 +13,10 @@ import gunner from "./assets/gunner.jpg";
 
   <main>
     <div class="descriptionContainer">
-      <a class="imageContainer" href="https://www.twitch.tv/mooniejoy">
+      <a class="imageATag" href="https://www.twitch.tv/mooniejoy">
         <img src="/src/assets/mooniejoyTwitchImage.png" />
       </a>
+
       <p class="description">
         Welcome to the Rat Awards, which will be held for the first time this
         year. <br />
@@ -221,16 +222,18 @@ import gunner from "./assets/gunner.jpg";
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 .description {
   color: var(--baseGrey);
   font-size: 2rem;
   font-weight: 700;
 }
-.imageContainer {
+.imageATag {
   display: block;
 }
-.imageContainer img {
+.imageATag img {
   padding: 0.3rem;
   background: linear-gradient(to right, #772ce8, purple);
   border-radius: 3rem;
