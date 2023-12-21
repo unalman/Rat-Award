@@ -1,0 +1,18 @@
+:root {
+  --baseGold: #ff8f03f5;
+  --titleGold: #dd881ef5;
+  --baseBlack: #18181b;
+  --baseGrey:#adadb8;
+  --baseFont: "Roobert","Inter","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+body{
+  /* background: linear-gradient(0.25turn,var(--baseGold) 0%,var(--baseBlack) 5%,var(--baseBlack) 95%, var(--baseGold) 100%); */
+  background: var(--baseBlack);
+  font-family: var(--baseFont);
+  margin: 0% 5% 2% 5%; /*top, right, bottom, left*/
+  padding: 0px;
+}
+ul {
+  list-style-type: none;
+}
