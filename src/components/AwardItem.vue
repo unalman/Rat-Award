@@ -29,7 +29,6 @@ const UrlFilled = props.Url + parentString + parents.join(parentString);
           scrolling="no"
           height="378"
           width="620"
-          preload="0"
         ></iframe>
       </figure>
     </div>
