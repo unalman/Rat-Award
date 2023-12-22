@@ -251,7 +251,7 @@ import gunner from "./assets/gunner.jpg";
   padding: 0;
   margin: 0;
 }
-@media (max-width: 850px) {
+@media (max-width: 768px) {
   .title {
     font-weight: 1000;
     color: var(--titleGold);
