@@ -9,7 +9,7 @@ const props = defineProps({
   IsWinner: Boolean,
 });
 const resultText = props.IsWinner ? "Winner" : "Nominee";
-const parents = ["www.ratawards.com","ratawards.com","localhost"];
+const parents = ["www.ratawards.com", "ratawards.com", "localhost"];
 const parentString = "&parent=";
 const UrlFilled = props.Url + parentString + parents.join(parentString);
 </script>
@@ -18,16 +18,18 @@ const UrlFilled = props.Url + parentString + parents.join(parentString);
   <div class="awardItemContainer">
     <div :class="{ winnerFramework: IsWinner, nomineeFramework: !IsWinner }">
       <figure class="awardFigure">
-        <img v-if="IsImage && !IsEmote" class="awardImage" :src="Url" />
-        <img v-if="IsEmote" class="awardEmote" :src="Url" />
+        <img v-if="IsImage && !IsEmote" class="awardImage" v-lazy="Url" />
+        <img v-if="IsEmote" class="awardEmote" v-lazy="Url" />
         <iframe
           v-if="!IsImage"
-          :src="UrlFilled"
+          v-lazy="UrlFilled"
           frameborder="0"
+          loading="lazy"
           allowfullscreen="true"
           scrolling="no"
           height="378"
           width="620"
+          preload="0"
         ></iframe>
       </figure>
     </div>
