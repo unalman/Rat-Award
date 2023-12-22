@@ -101,7 +101,7 @@ import gunner from "./assets/gunner.jpg";
             :IsWinner="true"
           />
           <AwardItem
-            Name="She gently warns her teammate with the bomb"
+            Name="She gently warns her teammate"
             :IsImage="false"
             Url="https://clips.twitch.tv/embed?clip=MotionlessJollyMochaMVGame-MHJel9ZITl1EylvT"
             :IsWinner="false"
@@ -244,10 +244,31 @@ import gunner from "./assets/gunner.jpg";
   background: linear-gradient(to right, #772ce8, purple);
   border-radius: 3rem;
 }
-
 .awardUl {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 850px) {
+  .title {
+    font-weight: 1000;
+    color: var(--titleGold);
+    font-size: 2rem;
+    text-align: center;
+  }
+  .description {
+    color: var(--baseGrey);
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .awardUl {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+  }
 }
 </style>

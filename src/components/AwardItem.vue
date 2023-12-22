@@ -27,6 +27,7 @@ const UrlFilled = props.Url + parentString + parents.join(parentString);
           loading="lazy"
           allowfullscreen="true"
           scrolling="no"
+          class="awardIframe"
           height="378"
           width="620"
         ></iframe>
@@ -105,6 +106,10 @@ const UrlFilled = props.Url + parentString + parents.join(parentString);
   max-width: 150px;
   max-height: 120px;
 }
+.awardIframe {
+  width: 500px;
+  height: 300px;
+}
 .awardWinnerName,
 .awardNomeneeName {
   font: var(--baseFont);
@@ -117,5 +122,31 @@ const UrlFilled = props.Url + parentString + parents.join(parentString);
 }
 .awardNomeneeName {
   color: var(--baseGrey);
+}
+@media (max-width: 850px) {
+  .winnerText,
+  .nomineeText {
+    color: white;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+  }
+  .awardImage {
+    max-width: 300px;
+    max-height: 250px;
+  }
+  .awardIframe {
+    width: 300px;
+    height: 250px;
+  }
+  .awardWinnerName,
+  .awardNomeneeName {
+    font: var(--baseFont);
+    font-size: 0.75rem;
+    line-height: 2;
+    font-weight: 600;
+  }
 }
 </style>
